@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import "../node_modules/nes.css/css/nes.css";
+
+:root {
+  --red: #e76e55;
+  --blue: #209cee;
+  --green: #92cc41;
+  --yellow: #f7d51d;
+	--navy: #0c0c4a;
+	--dark-navy: #060726;
+	--pink: rgba(213, 84, 213, 1);
+	--pink2: rgba(213, 84, 213, 0.7);
+}
+* {
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Press Start 2P";
+	background: black;
 }
+.App {
+  background: wheat;
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  font-size: 8px;
+  font-family: monospace;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  padding: 10px;
+}
+.game-viewport {
+  outline: 4px solid;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  user-select: none;
+}
+.game-viewport.game-is-running {
+  cursor: url('./img/aim.svg'), auto;
+}
+
+

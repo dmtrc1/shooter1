@@ -1,0 +1,46 @@
+.results-screen {
+  background: var(--yellow);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.results-screen > div {
+  height: 100%;
+}
+
+.win-screen {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.lose-screen {
+  background: black;
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.lose-screen .img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 303px;
+  height: 360px;
+  background-image: url('../../img/lose-img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lose-screen .message {
+  color: black;
+  font-size: 9px;
+  position: absolute;
+  top: -61px;
+  width: 263px;
+  left: 151px;
+}

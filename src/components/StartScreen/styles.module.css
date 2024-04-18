@@ -1,0 +1,58 @@
+.start-screen {
+  background: var(--red);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.countdown-text {
+  font-size: 80px;
+  font-weight: 700;
+  color: white;
+}
+
+
+
+
+.animated {
+  width: 146px;
+  height: 160px;
+  bottom: 0;
+  position: absolute;
+  background-image: url('../../img/animated.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: linear forwards;
+  animation-name: run;
+  animation-duration: 15s;
+}
+
+
+@keyframes run {
+  0% {
+    left: -200px;
+  }
+  70% {
+    left: 100%;
+  }
+  80% {
+    left: 78%;
+  }
+  90% {
+    left: 78%;
+  }
+  100% {
+    left: 100%
+  }
+}
+
+
+
+/* transform: scaleX(-1); */

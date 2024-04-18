@@ -1,0 +1,46 @@
+.target {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hole {
+  width: 30px;
+  height: 30px;
+  background-image: url('../../img/bullet-hole.png');
+  background-size: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+}
+
+.hole-on-target {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-image: url('../../img/bullet-hole-target.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  transform: scale(1.5);
+  transform-origin: center;
+}
+
+.hit-on-target-message {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+}
